@@ -1,9 +1,12 @@
 package br.com.livro.domain;
 
+import org.springframework.stereotype.Component;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CarroDAO extends BaseDAO {
 
     public Carro getCarroOrderById(Long id) throws SQLException {

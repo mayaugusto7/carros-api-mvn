@@ -5,6 +5,8 @@ import br.com.livro.domain.CarroService;
 import br.com.livro.domain.Response;
 import br.com.livro.util.JAXBUtil;
 import br.com.livro.util.RegexUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,11 +17,17 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet("/carros/*")
+@Component
 public class CarroServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    private CarroService carroService = new CarroService();
+    private final CarroService carroService;
+
+    @Autowired
+    public CarroServlet(CarroService carroService) {
+        this.carroService = carroService;
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

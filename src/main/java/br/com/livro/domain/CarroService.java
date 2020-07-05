@@ -1,12 +1,21 @@
 package br.com.livro.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CarroService {
 
-    private CarroDAO db = new CarroDAO();
+    private final CarroDAO db;
+
+    @Autowired
+    public CarroService(CarroDAO db) {
+        this.db = db;
+    }
 
     public List<Carro> getCarros() {
         try {

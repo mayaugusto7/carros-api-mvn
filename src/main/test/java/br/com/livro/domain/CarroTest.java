@@ -1,6 +1,11 @@
 package br.com.livro.domain;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.springframework.beans.factory.annotation.Autowired;
+import test.SpringUtil;
 
 import java.util.List;
 
@@ -9,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CarroTest {
 
-    private CarroService carroService = new CarroService();
+    private CarroService carroService;
 
     @Test
     public void listarCarros() {
