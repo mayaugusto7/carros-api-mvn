@@ -1,0 +1,16 @@
+br\com\livro\domain\BaseDAO.class
+br\com\livro\servlets\CarroServlet.class
+br\com\livro\domain\Response.class
+br\com\livro\util\RegexUtil.class
+br\com\livro\servlets\ServletUtil.class
+br\com\livro\rest\GsonMessageBodyHandler.class
+br\com\livro\rest\HelloResource.class
+br\com\livro\util\JAXBUtil.class
+br\com\livro\rest\CarrosResource.class
+br\com\livro\rest\MyApplication.class
+br\com\livro\domain\Carro.class
+br\com\livro\servlets\HelloServlet.class
+br\com\livro\rest\ContentTypeSetter.class
+br\com\livro\domain\ListaCarros.class
+br\com\livro\domain\CarroDAO.class
+br\com\livro\domain\CarroService.class
