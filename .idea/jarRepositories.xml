@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="81cdd1bd-d73e-4c59-9532-c48884aebb49" />
+      <option name="name" value="81cdd1bd-d73e-4c59-9532-c48884aebb49" />
+      <option name="url" value="https://bintray.com/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="974a5a2d-8e41-4c89-8c42-ea80cc568708" />
+      <option name="name" value="974a5a2d-8e41-4c89-8c42-ea80cc568708" />
+      <option name="url" value="https://dl.bintray.com/jaycroaker/maven" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />

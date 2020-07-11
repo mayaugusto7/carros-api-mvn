@@ -1,27 +1,40 @@
 package br.com.livro.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
+@Entity
 @XmlRootElement
 public class Carro implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @Column(name = "id", unique = true, nullable = false)
     private Long id;
 
+    @Column(nullable = false, length = 50)
     private String tipo;
 
+    @Column(nullable = false, length = 100)
     private String nome;
 
+    @Column(name = "descricao", nullable = true, length = 500)
     private String desc;
 
+    @Column(name = "url_foto", nullable = true, length = 50)
     private String urlFoto;
 
+    @Column(name = "url_video", nullable = true, length = 50)
     private String urlVideo;
 
+    @Column(nullable = true, length = 15)
     private String latitude;
 
+    @Column(nullable = true, length = 15)
     private String longitude;
 
     public Long getId() {
